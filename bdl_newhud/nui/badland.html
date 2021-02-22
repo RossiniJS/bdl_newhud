@@ -1,0 +1,144 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+		<script src="badland.js" type="text/javascript"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js' type='text/javascript'></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
+		<link rel="stylesheet" href="badland.css">
+	</head>
+	<body>
+		<div id ="imgserver"><img src="https://cdn.discordapp.com/attachments/370313447247708171/813202311291600916/Logo_sem_fundo.png"></div>
+		
+		<div class="allHud">
+			<div class="topInfoContainer">
+				<div class="infosBack"></div>
+			</div>
+			<div class="hudBottomContainer">
+				<div id="hudDisplay">
+					<div class="healthBack">
+						<div class="healthDisplay"></div>
+						<div class="hudDisplayTextIcon"><i class="fas fa-heart"></i></div>
+					</div>
+					<div class="armourBack">
+						<div class="armourDisplay"></div>
+						<div class="hudDisplayTextIcon"><i class="fas fa-shield-alt"></i></div>
+					</div>
+					<div class="staminaBack">
+						<div class="staminaDisplay"></div>
+						<div class="hudDisplayTextIcon"><i class="fas fa-bolt"></i></div>
+					</div>
+					<div class="clockBack">
+						<div class="hudDisplayText"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="carContainer">
+				<div class="contCombustivel">
+					
+					<div id="randomcombustivel">
+						
+					</div>
+					<i class="fas fa-gas-pump"></i>
+				</div>
+				<div class="contEngine">
+					
+					<div id="randomengine">
+						
+					</div>
+					<i class="fas fa-car-crash"></i>
+				</div>
+				
+				<div class="carSpeedBackground">
+					<p> KM / H <p>
+					<div id="carDisplaySpeed"></div>
+				</div>
+				<div class="cinto">
+					<div class="cinto-iconred"> <img src="https://cdn.discordapp.com/attachments/740912067095035955/776883333895422022/cintooff.png"> </div>
+					<div class="cinto-icongreen"> <img src="https://cdn.discordapp.com/attachments/740912067095035955/776883186097586186/cintoon.png"> </div>
+				</div>
+				<div class="farol">
+					<div class="farol-ligado"><img src="https://cdn.discordapp.com/attachments/740912067095035955/776884018431393823/farolon.png"></div>
+					<div class="farol-desligado"><img src="https://cdn.discordapp.com/attachments/740912067095035955/776884016237379594/faroloff.png"></div>
+					<div class="farol-alto"> <img src="https://cdn.discordapp.com/attachments/740912067095035955/776884014882881576/farolalto.png"> </div>
+				</div>
+			</div>
+		</div>
+		<div id="movieTop"></div>
+		<div id="movieBottom"></div>
+		<div id="allScreen">
+			<div class="interactionMenu">
+				<div class="titleContainer">
+					<p> Controle de HUD <br><b>Badland Roleplay<b> </p>
+				</div>
+				<div class="contentContainer">
+					<div class="toggleContainer">
+						<div class="toggleDescription">
+							<p> Habilitar modo cinema </p>
+						</div>
+						<div class="toggleBox">
+							<label class="switch">
+								<input type="checkbox" id="cineMode">
+								<span class="slider round"></span>
+							</label>
+						</div>
+					</div>
+
+					<div class="toggleContainer">
+						<div class="toggleDescription">
+							<p> Ocultar HUD </p>
+						</div>
+						<div class="toggleBox">
+							<label class="switch">
+								<input type="checkbox" id="hideHUD">
+								<span class="slider round"></span>
+							</label>
+						</div>
+					</div>
+
+					<div class="toggleContainer">
+						<div class="toggleDescription">
+							<p> Ocultar marca d'água </p>
+						</div>
+						<div class="toggleBox">
+							<label class="switch">
+								<input type="checkbox" id="hideMark">
+								<span class="slider round"></span>
+							</label>
+						</div>
+					</div>
+
+					<div class="toggleContainer">
+						<div class="toggleDescription">
+							<p> Ocultar todos os status </p>
+						</div>
+						<div class="toggleBox">
+							<label class="switch">
+								<input type="checkbox" id="hideAllStatus">
+								<span class="slider round"></span>
+							</label>
+						</div>
+					</div>
+
+					<div class="toggleContainer">
+						<div class="toggleDescription">
+							<p> Ocultar todas as informações </p>
+						</div>
+						<div class="toggleBox">
+							<label class="switch">
+								<input type="checkbox" id="hideAllInfo">
+								<span class="slider round"></span>
+							</label>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
